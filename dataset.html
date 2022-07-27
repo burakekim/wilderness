@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>iSAID</title>
+	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" <script
+		src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js">
+	</script>
+	<!-- <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<style>
+		body {
+			background-color: rgb(250, 250, 250);
+			/*UCLA bgcolor*/
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="span12">
+				<div class="hero-unit">
+					<div class="content">
+						<h1 style="text-align:center; margin-top:60px; font-weight: bold">
+							<strong style="color:red">iSAID</strong>: A Large-scale Dataset for
+							Instance Segmentation in Aerial Images
+						</h1>
+						<p style="text-align:center; margin-bottom:15px; margin-top:20px; font-size: 18px">
+							<a
+								href="https://scholar.google.es/citations?hl=en&user=WNGPkVQAAAAJ&view_op=list_works&sortby=pubdate">Syed
+								Waqas Zamir</a>,
+							<a href="https://adityac8.github.io/">Aditya Arora</a>,
+							<a href="https://akshitac8.github.io/">Akshita Gupta</a>,
+							<a href="https://salman-h-khan.github.io/">Salman Khan</a>,
+							<a href="">Guolei Sun</a>, <br>
+							<a href="https://sites.google.com/view/fahadkhans/home">Fahad Shahbaz Khan</a>,
+							<a href="https://scholar.google.ae/citations?user=vD-ezyQAAAAJ&hl=en">Fan Zhu</a>,
+							<a href="https://scholar.google.com/citations?user=z84rLjoAAAAJ&hl=en">Ling Shao</a>,
+							<a href="http://captain.whu.edu.cn/xia_En.html">Gui-Song Xia</a>,
+							<a href="http://mclab.eic.hust.edu.cn/~xbai/">Xiang Bai</a>.
+						</p>
+						<div align="center">
+							<a href="http://www.inceptioniai.org/" class="div-inline">
+								<img border="0" src="images/logo_IIAI.png" width="100px" class="div-inline" />
+							</a>
+							<a href="https://www.whu.edu.cn/" class="div-inline">
+								<img border="0" src="images/logo_WHU.png" width="100px" class="div-inline" />
+							</a>
+							<a href="http://www.hust.edu.cn/" class="div-inline">
+								<img border="0" src="images/logo_HUST.jpg" width="100px" class="div-inline" />
+							</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="span6 offset2">
+							<ul class="nav nav-tabs">
+								<li> <a href="index.html">Home</a></li>
+								<li class="active"> <a href="dataset.html">Dataset</a></li>
+								<!-- <li><a href="tasks.html">Tasks</a></li> -->
+								<li><a href="evaluation.html">Evaluation</a></li>
+								<li><a href="results.html">Results</a></li>
+								<br />
+							</ul>
+						</div>
+					</div>
+					<h2 style="text-align:left; margin-bottom:10px; margin-top:30px; ">
+						Image Source and Usage License
+					</h2>
+					<p style="text-align:justify;">
+						The images of iSAID is the same as the <a
+							href="https://captain-whu.github.io/DOTA/index.html">DOTA-v1.0</a> dataset, which are manily
+						collected from the
+						Google Earth, some are taken by satellite JL-1,
+						the others are taken by satellite GF-2 of the China Centre for Resources Satellite Data and
+						Application.
+					</p>
+					<p style="text-align:justify;">
+						Use of the images from Google Earth must respect the corresponding terms of use:
+						<a href="https://www.google.com/permissions/geoguidelines.html">"Google Earth" terms of use</a>.
+					</p>
+					<p style="text-align:justify;">
+						All images and their associated annotations in iSAID <strong style="color:blue">can be used for
+							academic purposes only, but any commercial use is prohibited</strong>.
+					</p>
+					<h2>
+						Object Category
+					</h2>
+					<p>
+						The object categories in iSAID include: plane, ship, storage tank,
+						baseball diamond, tennis court, basketball court, ground track field, harbor, bridge, large
+						vehicle,
+						small vehicle, helicopter, roundabout, soccer ball field and swimming pool.
+					</p>
+					<h2>
+						Annotation format
+					</h2>
+					<p>
+						The iSAID uses pixel-level annotations. Each pixel represents a particular class. The annotation
+						follows the format of <a href="http://cocodataset.org/#format-data">MS COCO</a>.
+					</p>
+					<h2>
+						Development kit
+					</h2>
+					<p>
+						The <a href="https://github.com/CAPTAIN-WHU/iSAID_Devkit">Development kit</a> provide the
+						following function:
+					</p>
+					<ul>
+						<li>
+							Data Preparation
+						</li>
+						<li>
+							Evaluation
+						</li>
+					</ul>
+					<h2>
+						Original Data:<a href="https://captain-whu.github.io/DOTA/index.html">DOTA</a> (Object
+						Detection)
+					</h2>
+					<p>
+						Dota is a large-scale dataset for object detection in aerial images.
+					</p>
+					<h2>
+						Data Download
+					</h2>
+					<p style="text-align:justify; font-size: 17px">
+						You can download iSAID from either Baidu Drive or Google Drive, according to your network
+						connections.
+					</p>
+					<ul>
+						<li style="font-size:17px">
+							iSAID on Baidu Drive: 
+							<a href="https://pan.baidu.com/s/1UMPoOJsOh8Mao7vFMgEoBQ">Training set</a> Code: 2zvm, 
+							<a href="https://pan.baidu.com/s/1VetE30zWYXnkP3MofxM3ag">Validation set</a> Code: fpsb, 
+							<a href="https://pan.baidu.com/s/1i6ly9Id">Testing images</a>,
+							<a href="https://pan.baidu.com/s/1REcyMM3JuDKheOYc0SEFtg">Testing images info (json)</a> Code: px3i
+						</li>
+						<li style="font-size:17px">
+							iSAID on Google Drive:
+							<a href="https://drive.google.com/drive/folders/19RPVhC0dWpLF9Y_DYjxjUrwLbKUBQZ2K?usp=sharing">Training set</a>,
+							<a href="https://drive.google.com/drive/folders/17MErPhWQrwr92Ca1Maf4mwiarPS5rcWM?usp=sharing">Validation set</a>, 
+							<a href="https://drive.google.com/drive/folders/1mYOf5USMGNcJRPcvRVJVV1uHEalG5RPl?usp=sharing">Testing images</a>, 
+							<a href="https://drive.google.com/open?id=1nQokIxSy3DEHImJribSCODTRkWlPJLE3">Testing images info (json)</a>
+
+						</li>
+						<br>
+						<br>
+					</ul>
+
+
+				</div>
+			</div>
+			<br>
+			<!-- <div align="center"><a href="http://www.amazingcounters.com"><img border="0"
+						src="http://cc.amazingcounters.com/counter.php?i=3243548&c=9730957"
+						alt="AmazingCounters.com"></a></div> -->
+			<div>
+				<p align="center">
+					<a href="https://clustrmaps.com/site/1awbn" title="Visit tracker"><img
+							src="//www.clustrmaps.com/map_v2.png?d=34HKbLxwjBZChyB15DpPx_zUf0m8i9ccbHEWnOj_hAk&cl=ffffff" /></a>
+				</p>
+			</div>
+			<br>
+		</div>
+
+</body>
+
+</html>
